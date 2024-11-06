@@ -11,3 +11,181 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Base Styles */
+.app-background {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2d2e40; /* Dark blue-gray background */
+  color: #e5e5e5; /* Light gray text */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.task-container {
+  display: flex;
+  max-width: 70vh;
+  width: 100%;
+  flex-direction: column;
+  background-color: #393b56; /* Dark gray-blue container */
+  color: #e5e5e5;
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin: 20px 0;
+  min-height: 205px;
+}
+
+.heading-text {
+  color: #9a75d9; /* Purple accent color */
+  font-size: 42px;
+  font-weight: bold;
+  background-color: #393b56;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.footer-text {
+  color: #a0a0a5;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 15px 25px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  color: #9a75d9; 
+}
+
+/* Button Styles */
+.add-button {
+  background-color: #9a75d9; /* Purple button */
+  border: none;
+  color: #2d2e40;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 15px 15px;
+}
+
+/* Input Styles */
+.text-input {
+  border: 2px solid #9a75d9; /* Purple border for input */
+  border-radius: 8px;
+  width: 310px;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 15px 15px;
+  font-weight: bold;
+  color: #e5e5e5;
+  background-color: #393b56;
+}
+
+/* List Item Styles */
+.list-item {
+  background-color: #9a75d9; /* Purple background for list items */
+  border: none;
+  border-radius: 8px;
+  width: 450px;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 15px 0;
+  color: #2d2e40;
+  font-weight: bold;
+  text-align: start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon Style */
+.delete-icon {
+  height: 26px;
+  cursor: pointer;
+}
+
+.no-item-text {
+  color: #9a75d9;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 50px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .heading-text {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
+  .text-input {
+    width: 200px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .list-item {
+    width: 290px;
+    padding: 10px 15px;
+  }
+
+  .delete-icon {
+    height: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .heading-text {
+    font-size: 24px;
+  }
+
+  .text-input {
+    width: 200px;
+    padding: 8px 10px;
+  }
+
+  .list-item {
+    width: 270px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading-text {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .text-input {
+    width: 150px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .list-item {
+    width: 220px;
+    padding: 8px 12px;
+  }
+
+  .add-button {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+}
